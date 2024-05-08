@@ -65,24 +65,20 @@ nav a:hover {
 
 .hero {
     display: flex;
+    justify-content: space-between;
     align-items: center;
-}
-
-h1 {
-    font-size: 48px;
-    font-weight: bolder;
-    display: flex;
-    flex-grow: 0;
-}
-
-.heroImg {
-    border: 1px solid pink;
-    aspect-ratio: 16/9;
-    max-width: 30%;
+    padding: 50px; /* Adjust padding as needed */
+    background-color: var(--primary-color);
 }
 
 .heroText {
-    display: flex;
+    flex: 1;
+    margin-right: 20px; /* Space between text and image */
+}
+
+.heroImg {
+    flex-basis: 30%; /* Adjust size as needed */
+    border: none; /* Remove border if not needed */
 }
 
 button {
@@ -93,10 +89,7 @@ button {
     color: #e5e7eb;
     background-color: #3882f6;
     text-align: center;
-    padding-left: 24px;
-    padding-right: 24px;
-    padding-top: 4px;
-    padding-bottom: 4px;
+    padding: 4px 24px;
     border: 0;
     cursor: pointer;
     flex-grow: 0;
@@ -104,4 +97,96 @@ button {
 
 button:hover {
     opacity: 0.7;
+}
+
+.content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 20px 100px;
+    background-color: var(--secondary-color); /* Change if different background is needed */
+}
+
+.content h3 {
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    color: #1f2937;
+}
+
+.box-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px;
+}
+
+
+.box {
+    display: flex;
+    justify-content: space-around;
+    width: 100%; /* Adjust width as needed */
+    height: 50%;
+    width: 30%; /* Adjust width as needed */
+    padding: 20px;
+    margin: 10px;
+    border: 3px solid #3882f6; /* Style borders as needed */
+    border-radius: 0.5em;
+    text-align: center;
+}
+
+.boxtext {
+    margin-top: 10px; /* Space between the box content and the subtext */
+    color: var(--primary-color); /* Optional: color adjustment */
+    font-size: 14px; /* Optional: font size adjustment */
+}
+
+.quote {
+    padding: 40px;
+    background-color: var(--bg-color); /* Adjust background color as needed */
+    text-align: center;
+    font-style: italic;
+}
+
+.cta {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background-color: #3882f6; /* Bright blue for visibility */
+    color: var(--secondary-color); /* Use the secondary color for text */
+    margin: 40px 0; /* Add some margin for spacing */
+}
+
+.cta button {
+    display: flex;
+    padding: 4px 24px;
+    margin-left: 50px;
+    background-color: #3882f6;
+    color: var(--secondary-color);
+    border: 1px solid white; /* Thin white border added */
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.cta button:hover {
+    opacity: 0.7;
+}
+
+footer {
+    font-size: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+}
+
+footer button {
+    margin: 0 10px;
 }
