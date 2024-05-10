@@ -4,11 +4,12 @@
     --bg-color: #e5e7eb;
 }
 
+/* Global styles */
 * {
     font-family: 'Roboto', sans-serif;
-    /* border: 1px solid pink; */
 }
 
+/* Text color styles */
 .darkerText {
     color: var(--primary-color);
 }
@@ -20,12 +21,15 @@
 .greyText {
     color: var(--bg-color);
 }
+
+/* Layout for header, main, and footer */
 header, main, footer {
     max-width: 1000px;
     margin: 0 auto;
     width: 100%;
 }
 
+/* Styling for header and footer */
 header, .hero, footer {
     background: var(--primary-color);
 }
@@ -36,20 +40,12 @@ header {
     justify-content: space-between;
 }
 
-header h3 {
-    font-size: 24px;
-    padding-left: 24px;
-}
-
+/* Navigation styles */
 nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
     gap: 8px;
-}
-
-nav a .heroText{
-    font-size: 14px;
 }
 
 nav a {
@@ -63,111 +59,71 @@ nav a:hover {
     opacity: 0.7;
 }
 
+/* Hero section styles */
 .hero {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 50px; /* Adjust padding as needed */
+    padding: 50px;
     background-color: var(--primary-color);
 }
 
-.heroText {
-    flex: 1;
-    margin-right: 20px; /* Space between text and image */
-}
-
-.heroImg {
-    flex-basis: 30%; /* Adjust size as needed */
-    border: none; /* Remove border if not needed */
-}
-
-button {
-    display: flex;
-    box-sizing: border-box; 
-    border-radius: 0.3em;
-    border-color: #e5e7eb;
-    color: #e5e7eb;
-    background-color: #3882f6;
-    text-align: center;
-    padding: 4px 24px;
-    border: 0;
-    cursor: pointer;
-    flex-grow: 0;
-}
-
-button:hover {
-    opacity: 0.7;
-}
-
+/* Content section styling */
 .content {
     display: flex;
     flex-direction: row;
-    align-items: center;
-    padding: 20px 100px;
-    background-color: var(--secondary-color); /* Change if different background is needed */
+    flex-wrap: wrap; /* Allows boxes to wrap in smaller screens */
+    justify-content: space-around; /* Distributes space around items */
+    align-items: flex-start; /* Aligns items at the start of the flex container */
+    padding: 20px;
+    background-color: var(--secondary-color);
 }
 
-.content h3 {
-    display: flex;
-    flex-wrap: wrap;
-    font-size: 36px;
-    font-weight: bold;
-    margin-bottom: 20px;
-    margin-top: 20px;
-    color: #1f2937;
-}
-
+/* Individual box styling */
 .box-container {
     display: flex;
     flex-direction: column;
     align-items: center;
     margin: 10px;
+    width: 20%; /* Adjust width as needed */
 }
-
 
 .box {
     display: flex;
-    justify-content: space-around;
-    width: 100%; /* Adjust width as needed */
-    height: 50%;
-    width: 30%; /* Adjust width as needed */
+    justify-content: center;
+    align-items: center;
+    width: 100%;
     padding: 20px;
     margin: 10px;
-    border: 3px solid #3882f6; /* Style borders as needed */
+    border: 3px solid #3882f6;
     border-radius: 0.5em;
     text-align: center;
 }
 
+
 .boxtext {
-    margin-top: 10px; /* Space between the box content and the subtext */
-    color: var(--primary-color); /* Optional: color adjustment */
-    font-size: 14px; /* Optional: font size adjustment */
+    margin-top: 10px;
+    color: var(--primary-color);
+    font-size: 14px;
 }
 
-.quote {
-    padding: 40px;
-    background-color: var(--bg-color); /* Adjust background color as needed */
-    text-align: center;
-    font-style: italic;
-}
-
+/* Call to action styles */
 .cta {
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 20px;
-    background-color: #3882f6; /* Bright blue for visibility */
-    color: var(--secondary-color); /* Use the secondary color for text */
-    margin: 40px 0; /* Add some margin for spacing */
+    background-color: #3882f6;
+    color: var(--secondary-color);
+    margin: 40px 0;
 }
 
 .cta button {
-    display: flex;
     padding: 4px 24px;
     margin-left: 50px;
     background-color: #3882f6;
     color: var(--secondary-color);
-    border: 1px solid white; /* Thin white border added */
+    border: 1px solid white;
     border-radius: 5px;
     cursor: pointer;
     transition: background-color 0.3s ease;
@@ -177,6 +133,7 @@ button:hover {
     opacity: 0.7;
 }
 
+/* Footer styles */
 footer {
     font-size: 12px;
     display: flex;
@@ -185,8 +142,4 @@ footer {
     padding: 20px;
     background-color: var(--primary-color);
     color: var(--secondary-color);
-}
-
-footer button {
-    margin: 0 10px;
 }
