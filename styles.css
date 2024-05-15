@@ -31,13 +31,19 @@ header, main, footer {
 
 /* Styling for header and footer */
 header, .hero, footer {
-    background: var(--primary-color);
+    background-color: var(--primary-color);
 }
 
 header {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-between;;
+}
+
+.headerLogo {
+    font-size: 24px;
+    color: var(--secondary-color);
+    padding-left: 50px;
 }
 
 /* Navigation styles */
@@ -45,14 +51,13 @@ nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    gap: 8px;
 }
 
 nav a {
     font-size: 14px;
     cursor: pointer;
     text-decoration: none;
-    padding-right: 24px;
+    padding-right: 50px;
 }
 
 nav a:hover {
@@ -61,14 +66,62 @@ nav a:hover {
 
 /* Hero section styles */
 .hero {
+    width: 900px;
+    height: 300px;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
     padding: 50px;
     background-color: var(--primary-color);
 }
 
+h1 {
+    font-size: 48px;
+    color: var(--secondary-color);
+    margin: 0;
+}
+
+.heroText {
+    font-size: 16px;
+    color: var(--secondary-color);
+    margin-top: 0;
+    margin-bottom: 5;
+
+}
+
+button {
+    padding: 4px 24px;
+    background-color: #3882f6;
+    color: var(--secondary-color);
+    border: 1px solid #3882f6;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    opacity: 0.7;
+}
+
+.heroImg {   
+    border: 1px solid white;
+    padding: 100px 150px; 
+}
+
+.hero1 {
+    flex: 1;
+}
+
+.hero2 {
+    flex: 1;
+}
+
+
 /* Content section styling */
+
+h3 {
+    text-align: center;
+    margin-bottom: 0;
+}
+
 .content {
     display: flex;
     flex-direction: row;
@@ -76,7 +129,6 @@ nav a:hover {
     justify-content: space-around; /* Distributes space around items */
     align-items: flex-start; /* Aligns items at the start of the flex container */
     padding: 20px;
-    background-color: var(--secondary-color);
 }
 
 /* Individual box styling */
@@ -85,7 +137,7 @@ nav a:hover {
     flex-direction: column;
     align-items: center;
     margin: 10px;
-    width: 20%; /* Adjust width as needed */
+    width: 20% /* Adjust width as needed */
 }
 
 .box {
@@ -93,29 +145,71 @@ nav a:hover {
     justify-content: center;
     align-items: center;
     width: 100%;
-    padding: 20px;
-    margin: 10px;
+    padding: 60px 10px;
+    margin: 0 10px 0 10px;
     border: 3px solid #3882f6;
     border-radius: 0.5em;
     text-align: center;
 }
 
-
 .boxtext {
-    margin-top: 10px;
+    margin-top: 0px;
     color: var(--primary-color);
     font-size: 14px;
+    text-align: center;
+}
+
+/* Quote section Styling */
+
+.quote {
+    text-align: center;
+    background-color: var(--bg-color);
+    padding: 50px;
+    
+}
+
+.quoteText {
+    font-size: 24px;
+    color: var(--primary-color);
+    font-style: italic;
+    font-weight: 100;
+    margin-bottom: 0;
+}
+
+.quoteAuthor {
+    font-size: 14px;
+    color: var(--primary-color);
+    font-weight: bold;
+    margin: 15px 15px 15px 15px;
+    text-align: right;
 }
 
 /* Call to action styles */
 .cta {
     display: flex;
     justify-content: center;
+    border-radius: 5px;
     align-items: center;
     padding: 20px;
     background-color: #3882f6;
     color: var(--secondary-color);
-    margin: 40px 0;
+    margin: 40px 40px;
+}
+
+.ctaText {
+    display: flex;
+    flex-direction: column;
+    padding-right: 200px;
+}
+.ctaText1 {
+    margin: 10px 0 0 0;
+}
+
+.ctaText2 {
+    margin: 0 0 10px 0;
+    font-size: 14px;
+    font-weight: 100;
+    color: var(--secondary-color);
 }
 
 .cta button {
